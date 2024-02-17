@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Body(){
+export default function Body(props){
     return(
         <div className="card">
             <img src="./img/image 12.png" alt="swim" className="card--img"/>
