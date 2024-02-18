@@ -5,14 +5,32 @@ import './App.css'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Body from './components/Body.jsx'
+import data from './data.js'
 
 function App() {
-
+  
+  const cards = data.map((item)=> {
+    return (
+      <Body 
+        key = {item.id}
+        image = {item.coverImg}
+        rating = {item.stats.rating}
+        review = {item.stats.reviewCount}
+        location = {item.location} 
+        title = {item.title} 
+        price = {item.price}
+        openSpots={item.openSpots}>
+      </Body>
+    )
+  })
+  
   return (
     <div>
         <Navbar></Navbar>
         <Hero></Hero>
-        <Body></Body>
+        <section className='card-list'>
+          {cards}
+        </section>
     </div>
   )
 }
