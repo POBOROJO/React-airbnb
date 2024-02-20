@@ -77,6 +77,14 @@ section{
     margin-bottom: 0.5625rem;
 }
 
+.card--img {
+    transition: 0.3s ease;
+}
+  
+.card--img:hover {
+    scale:1.1;
+}
+
 .card--title{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -113,4 +121,3 @@ section{
     border-radius: 0.5rem;
     font-weight: bold;
 }
-

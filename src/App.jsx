@@ -11,7 +11,7 @@ function App() {
   
   const cards = data.map((item)=> {
     return (
-      <Body 
+      <Body
         key = {item.id}
         {...item}>
       </Body>
